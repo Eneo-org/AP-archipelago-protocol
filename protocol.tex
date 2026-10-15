@@ -194,6 +194,7 @@ pub struct Cell { pub q: i32, pub r: i32 }
 impl Cell {
     pub fn s(self) -> i32 { -self.q - self.r }
     pub fn neighbour(self, direction: Direction) -> Cell;
+    pub fn distance (&self, other: &Cell) -> u32;
 }
 \end{lstlisting}
 
